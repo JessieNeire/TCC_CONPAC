@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="script.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+  html{
+     height: 100%;
+
+  }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: linear-gradient(to top, black, #101031, midnightblue);
+      background-repeat: no-repeat;
+     
+    }
+
+    .logo {
+      text-align: top;
+      margin: 24px 0 12px 0;
+    }
+
+    .logoimg {
+      width: 25%;
+      border-radius: 50%;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="logo w3-display-topmiddle w3-center">
+    <!--Imagem temporaria-->
+    <img src="imagens_logo/logo_semFundo.png" alt="conpac" class="logoimg">
+  </div>
+ 
+  <div class="w3-container w3-card-4 w3-round-xxlarge w3-display-middle w3-quarter w3-padding w3-black" style="opacity: 0.7;">
+    
+    <h2 class="w3-center">Conpac</h2><br>
+    <form id="myForm_login" action="loginAction.php" method="post">
+      <div class="w3-container">
+        <label for="uname"><b>Login</b></label>
+        <input class="w3-input w3-round-xlarge" type="text" name="login" required>
+        <br>
+        <label for="psw"><b>Senha</b></label>
+        <input class="w3-input w3-round-xlarge" type="password" name="senha" required>
+        <br>
+        <button class="w3-button w3-block w3-round-xlarge" type="submit" style="background-color: midnightblue;">Login</button>
+       
+          <!-- implantar depois <input class="w3-check" type="checkbox" checked="checked" name="remember"> Remember me</label>  -->
+      </div><br>
+    </form>
+    <div class="w3-container  w3-padding">
+     <a href="esqueceu_senha.php"><b class="w3-text-blue">Esqueci minha senha</b></a>
+    </div>
+  </div>
+  
+</body>
+
+</html>
